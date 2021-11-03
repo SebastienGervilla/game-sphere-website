@@ -33,12 +33,19 @@
     --third-font: 'Arial';
 }
 
+body {
+    font-family: 'Poppins-Regular';
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins-bold'
+}
+
 /* -- Header Area -- */
 
 .header-area {
     background-color: var(--color2);
     height: 115px;
-    font-family: var(--main-font);
     font-size: 20px;
     font-weight: 700;
     color: var(--color1);
@@ -85,6 +92,7 @@
 .nav-list a {
     text-decoration: none;
     color: var(--color1);
+    transition: .1s ease-out;
 }
 
 .nav-list a:hover {
@@ -167,6 +175,8 @@
 }
 
 .activity-part-content h2 {
+    font-family: var(--main-font-bold);
+    font-size: 36px;
     text-align: center;
     margin-bottom: 80px;
 }
@@ -269,10 +279,12 @@
 }
 
 .join-part h2 {
+    font-family: var(--main-font-bold);
+    font-size: 36px;
     width: 100%;
     color: var(--color2);
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .join-content {
@@ -281,7 +293,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 200px;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .join-block {
@@ -401,12 +413,7 @@
     flex-direction: column;
 }
 
-.button-header a{
-    text-decoration: none;
-    color: var(--color1) ;
-}
-
-.button-header{
+.scrolltop-button{
     text-align: center;
     list-style: none;
     font-family: var(--main-font);
@@ -418,17 +425,17 @@
     
 }
 
-.button-header:hover{
-    text-align: center;
-    list-style: none;
-    font-family: var(--main-font);
-    font-size: 15px;
-    font-weight: bold;
-    padding: 15px;
-    background-color: var(--color3);
-    
+.scrolltop-button button{
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color1);
+    border: none;
+    font-size: 18px;
+    font-family: var(--main-font-bold);
+    transition: .1s ease-out;
 }
 
-.button-header a:hover {
-    text-decoration: none;
+.scrolltop-button button:hover{
+    color: var(--color3);
+    transition: .1s ease-out;
 }
