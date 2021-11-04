@@ -34,7 +34,22 @@
 }
 
 body {
-    font-family: 'Poppins-Regular';
+    font-family: var(--main-font);
+}
+
+body::-webkit-scrollbar {
+    background-color: var(--color1);
+    box-shadow: inset 0 0 2px #1a1d1ec0;
+    width: 16px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #1a1d1ec0;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #1a1d1ecc;
+    box-shadow: inset 0 0 4px #1a1d1ec0;
 }
 
 h1, h2, h3 {
@@ -136,26 +151,48 @@ h1, h2, h3 {
 
 /* Slider */
 
-.slider-content {
-    width: 100%;
+.slide {
+    background-image: url('../assets/Images/homepage-background-2.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 650px;
+    padding: 40px 0;
+    color: var(--color1);
 }
 
-.slide {
-    background-image: url('../assets/Images/homepage-background.jpg');
-    background-position: center top;
-    width: 100%;
-    height: 650px;
-    padding: 100px;
+.slide-content {
+    max-width: 1200px;
+    min-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
 }
 
 .slide h2 {
     font-family: var(--main-font-bold);
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 72px;
 }
 
-.slide p {
-    width: 40%;
+.slide h3 {
+    font-size: 28px;
+    padding: 30px 0;
+}
+
+.slide-buttons button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--color1);
+    padding: 10px;
+    margin-right: 25px;
+    color: var(--color1);
+    font-size: 16px;
+    transition: .2s ease;
+}
+
+.slide-buttons button:hover {
+    background-color: var(--color1);
+    color: #00508d;
+    transition: .2s ease;
 }
 
 /* Pourquoi rejoindre */
