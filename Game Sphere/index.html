@@ -11,45 +11,46 @@
     <title>Game Sphere</title>
 </head>
 <body>
-    <section id= "header-area" class="header-area">
-        <header class="header">
-            <div class="header-content">
-                <div class="header-logo">
-                    <img src="assets/IV/GS Logo.png" alt="Game Sphere Logo">
+    <div class="side-bar" id="side-bar">
+        <ul class="icon-list">
+            <li><img src="assets/Icons/up-arrow.png" alt="Arrow up icon" onclick="window.scrollTo({top:0, behavior:'smooth'})"></li>
+        </ul>
+    </div>
+    <section class="landing-area" id="landing-area">
+        <section class="header-part">
+            <header class="header">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <a href="index.html"><img src="assets/IV/GS Logo.png" alt="Game Sphere Logo"></a>
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Actualités</a></li>
+                            <li><a href="index.html">WebTV</a></li>
+                            <li><a href="index.html">Boutique</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header-nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html">Actualités</a></li>
-                        <li><a href="index.html">Communauté</a></li>
-                        <li><a href="index.html">WebTV</a></li>
-                        <li><a href="index.html">Boutique</a></li>
-                    </ul>
-                </nav>
-                <div class="header-account">
-                    <button class="header-button">P</button>
-                    <button class="header-button">A</button>
-                </div>
-            </div>
-        </header>
-    </section>
-    <section class="main-area">
-        <div class="slider-part">
-            <div class="slider-content">
-                <div class="slide">
-                    <div class="slide-content">
-                        <h2>Game Sphere</h2>
-                        <h3>Le divertissement numérique.</h3>
-                        <div class="slide-buttons">
-                            <button id="join-us-button" onclick="(window.scrollTo({top:2745, behavior:'smooth'}))">Nous Rejoindre</button>
-                            <button id="know-more-button" onclick="(window.scrollTo({top:650, behavior:'smooth'}))">En Savoir Plus</button>
-                        </div>
+            </header>
+        </section>
+        <section class="landing-part">
+            <div class="landing">
+                <div class="landing-content">
+                    <h1>Game Sphere</h2>
+                    <h2>Le divertissement numérique.</h3>
+                    <p>Nous sommes une association ayant pour but quelque chose,
+                        mais ce texte est en réalité un exemple donc peu importe enfaite.</p>
+                    <div class="landing-buttons">
+                        <button id="join-us-button" onclick="(window.scrollTo({top:2745, behavior:'smooth'}))">Nous Rejoindre</button>
+                        <button id="know-more-button" onclick="(window.scrollTo({top:650, behavior:'smooth'}))">En Savoir Plus</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+    </section>
+    <section class="main-area">
         <div class="activity-part">
             <div class="activity-part-content">
-                <h2>Pourquoi nous rejoindre</h2>
                 <div class="activities">
                     <div class="activity-left">
                         <div class="activity first">
@@ -72,7 +73,8 @@
                         </div>
                     </div>
                     <div class="activity-bar-content">
-                        <div class="activity-bar">
+                        <div class="activity-bar" id="scroll-bar">
+                            <div id="progress-bar"></div>
                             <div class="bar-icons">
                                 <img src="assets/Icons/discord-icon.png" alt="Test icon">
                                 <img src="assets/Icons/discord-icon.png" alt="Test icon">
@@ -94,57 +96,35 @@
                 </div>
             </div>
         </div>
-        <div class="join-part">
-            <div class="join-content">
-                <h2>Comment nous rejoindre</h2>
-                <div class="join-block">
-                    <h3>Association</h3>
-                    <p>Adhère, deviens membre.</p>
-                    <div>
-                        <ul class="join-list">
-                            <li>Argument 1</li>
-                            <li>Argument 1</li>
-                            <li>Argument 1</li>
-                            <li>Argument 1</li>
-                        </ul>
-                        <ul class="social-links">
-                            <li><img src="assets/Icons/gmail-icon.png" alt="Gmail icon"></li>
-                            <li><img src="assets/Icons/form-icon.png" alt="Contact form icon"></li>
-                            <li><img src="assets/Icons/localisation-icon.png" alt="Pointer icon"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="join-block">
-                    <h3>Communauté</h3>
-                    <p>Entre dans la communauté&nbsp!</p>
-                    <div>
-                        <ul class="join-list">
-                            <li>Argument 1</li>
-                            <li>Argument 1</li>
-                            <li>Argument 1</li>
-                            <li>Argument 1</li>
-                        </ul>
-                        <ul class="social-links">
-                            <li><img src="assets/Icons/youtube-icon.png" alt="Youtube icon"></li>
-                            <li><img src="assets/Icons/twitch-icon.png" alt="Twitch icon"></li>
-                            <li><img src="assets/Icons/discord-icon.png" alt="Discord icon"></li>
-                            <li><img src="assets/Icons/instagram-icon.png" alt="Instagram icon"></li>
-                        </ul>
-                    </div>
+        <div class="contact-part">
+            <div class="contact-content">
+                <div class="contact-form-content">
+                    <div class="contact-image"></div>
+                    <form class="contact-form" action="">
+                        <div class="form-name">
+                            <input name="name-input" type="text" placeholder="Nom">
+                        </div>
+                        <div class="form-email">
+                            <input name="email-input" type="text" placeholder="Email">
+                        </div>
+                        <div class="form-message">
+                            <textarea name="message-input" cols="20" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <input name="submit-input" id="submit-input" type="submit" value="Envoyer">
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <section class="footer-area">
         <footer class="footer">
-            <div class="scrolltop-button">
-                <button id="scrolltop-button" onclick="(window.scrollTo({top:0, behavior:'smooth'}))">Retour en haut</a>
-            </div>
             <div class="footer-content">
 
             </div>
         </footer>
     </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
