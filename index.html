@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TBD">
+    <meta name="description" content="TBD">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/IV/GS Logo.png">
+    <link rel="stylesheet" href="assets/Icons/FontAwesome/css/all.min.css">
+    <title>Game Sphere</title>
+</head>
+<body>
+    <div class="side-bar" id="side-bar">
+        <ul class="icon-list">
+            <li><i class="fas fa-chevron-up" onclick="window.scrollTo({top:0, behavior:'smooth'})"></i></li>
+        </ul>
+    </div>
+    <section class="landing-area" id="landing-area">
+        <section class="header-part">
+            <header class="header">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <a href="index.html"><img src="assets/IV/GS Logo.png" alt="Game Sphere Logo"></a>
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Actualités</a></li>
+                            <li><a href="index.html">WebTV</a></li>
+                            <li><a href="index.html">Boutique</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </section>
+        <section class="landing-part">
+            <div class="landing">
+                <div class="landing-content">
+                    <h1>Game Sphere</h2>
+                    <h2>Le divertissement numérique.</h3>
+                    <p>Nous sommes une association ayant pour but quelque chose,
+                        mais ce texte est en réalité un exemple donc peu importe enfaite.</p>
+                    <div class="landing-buttons">
+                        <button id="join-us-button" onclick="(window.scrollTo({top: getElementById('activity-first').getBoundingClientRect().y - 50, behavior:'smooth'}))">Nous Rejoindre</button>
+                        <button id="know-more-button" onclick="(window.scrollTo({top: getElementById('contact-part').getBoundingClientRect().y - 50, behavior:'smooth'}))">En Savoir Plus</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="main-area">
+        <div class="activity-part">
+            <div class="activity-part-content">
+                <div class="activities">
+                    <div class="activity-left">
+                        <div class="activity first" id="activity-first">
+                            <div class="activity-content">
+                                <div class="activity-desc">
+                                    <h3>Communauté</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, modi.</p>
+                                </div>
+                                <div class="activity-img"></div>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <div class="activity-content">
+                                <div class="activity-desc">
+                                    <h3>WebTV</h3>
+                                    <p>Activité Description</p>
+                                </div>
+                                <div class="activity-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-bar-content">
+                        <div class="activity-bar" id="scroll-bar">
+                            <div id="progress-bar"></div>
+                            <div class="bar-icons">
+                                <img src="assets/Icons/discord-icon.png" alt="Test icon">
+                                <img src="assets/Icons/discord-icon.png" alt="Test icon">
+                                <img src="assets/Icons/discord-icon.png" alt="Test icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-right">
+                        <div class="activity">
+                            <div class="activity-content">
+                                <div class="activity-desc">
+                                    <h3>Évènements</h3>
+                                    <p>Activité Description</p>
+                                </div>
+                                <div class="activity-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-part" id="contact-part">
+            <div class="contact-content">
+                <div class="contact-form-content">
+                    <div class="contact-image"></div>
+                    <form class="contact-form" action="">
+                        <div class="form-name">
+                            <input name="name-input" type="text" placeholder="Nom">
+                        </div>
+                        <div class="form-email">
+                            <input name="email-input" type="text" placeholder="Email">
+                        </div>
+                        <div class="form-message">
+                            <textarea name="message-input" cols="20" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <input name="submit-input" id="submit-input" type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="social-part">
+            <div class="social-content">
+                <ul class="social-links">
+                    <li><i class="fab fa-twitch"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-discord"></i></li>
+                    <li><i class="fab fa-twitch"></i></li>
+                    <li><i class="fab fa-twitch"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="footer-area">
+        <footer class="footer">
+            <div class="footer-content">
+
+            </div>
+        </footer>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
