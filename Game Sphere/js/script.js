@@ -1,3 +1,5 @@
+window.onscroll = function(){updateScrollBar()};
+
 function updateScrollBar() {
     docYPos = scrollY;
     scrollBar = document.getElementById('scroll-bar');
@@ -22,5 +24,3 @@ function updateScrollBar() {
         document.getElementById('side-bar').classList.remove('active');
     }
 }
-
-window.onscroll = function(){updateScrollBar()};
