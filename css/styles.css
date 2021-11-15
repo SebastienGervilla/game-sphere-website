@@ -261,6 +261,7 @@ h1, h2, h3 {
 }
 
 #join-us-button {
+    position: relative;
     background-color: var(--color1);
     color: var(--color3);
 }
@@ -268,6 +269,15 @@ h1, h2, h3 {
 #join-us-button:hover {
     background-color: transparent;
     color: var(--color1);
+}
+
+#join-us-button::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 20px;
+    border-bottom: 2px solid var(--color1);
+    border-right: 2px solid var(--color1);
 }
 
 /* Pourquoi rejoindre */
