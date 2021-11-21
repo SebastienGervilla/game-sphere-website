@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="TBD">
-    <meta name="description" content="TBD">
+    <meta name="description" content="Game Sphere est une association de passionés réunis autour du jeu vidéo.
+    Nous organisons des évènements tous niveaux. Mot d'ordre : respect, partage et esprit d'équipe.">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="assets/IV/GS Logo.png">
+    <link rel="icon" href="assets/IV/GS_Logo.png">
     <link rel="stylesheet" href="assets/Icons/FontAwesome/css/all.min.css">
-    <title>Game Sphere</title>
+    <title>Game Sphere | Gaming • Communauté • Évènements</title>
 </head>
 <body>
     <div class="side-bar" id="side-bar">
@@ -18,38 +19,49 @@
         </ul>
     </div>
     <section class="landing-area" id="landing-area">
-        <section class="header-part">
-            <header class="header">
-                <div class="header-content">
-                    <div class="header-logo">
-                        <a href="index.html"><img src="assets/IV/GS Logo.png" alt="Game Sphere Logo"></a>
+        <img class="test-img" src="assets/Images/Manette.svg" alt="">
+        <div class="landing-content">
+            <section class="header-part">
+                <header class="header">
+                    <div class="header-content">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="assets/IV/GS_Logo.png" alt="Game Sphere Logo"></a>
+                            <h2>GAME SPHERE</h2>
+                        </div>
+                        <nav class="header-nav">
+                            <ul class="nav-list">
+                                <li><a href="index.html">Actualités</a></li>
+                                <li><a href="index.html">WebTV</a></li>
+                                <li><a href="index.html">Boutique</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav class="header-nav">
-                        <ul class="nav-list">
-                            <li><a href="index.html">Actualités</a></li>
-                            <li><a href="index.html">WebTV</a></li>
-                            <li><a href="index.html">Boutique</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        </section>
-        <section class="landing-part">
-            <div class="landing">
-                <div class="landing-content">
-                    <h1>Game Sphere</h2>
-                    <h2>Le divertissement numérique.</h3>
-                    <p>Nous sommes une association ayant pour but quelque chose,
-                        mais ce texte est en réalité un exemple donc peu importe enfaite.</p>
+                </header>
+            </section>
+            <section class="landing-part">
+                <div class="landing-part-content">
+                    <div class="landing-text">
+                        <h1>Le divertissement numérique.</h1>
+                        <p>Game Sphere est une association de passionés réunis autour du jeu vidéo.
+                            Nous organisons des évènements tous niveaux.</p>
+                    </div>
                     <div class="landing-buttons">
-                        <button id="join-us-button" onclick="(window.scrollTo({top: getElementById('activity-first').getBoundingClientRect().y - 50, behavior:'smooth'}))">Nous Rejoindre</button>
                         <button id="know-more-button" onclick="(window.scrollTo({top: getElementById('contact-part').getBoundingClientRect().y - 50, behavior:'smooth'}))">En Savoir Plus</button>
+                        <button id="join-us-button" onclick="(window.scrollTo({top: getElementById('activity-first').getBoundingClientRect().y - 50, behavior:'smooth'}))">Nous Rejoindre</button>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </section>
     <section class="main-area">
+        <div class="event-part">
+            <div class="event-content">
+                <div class="event-line">
+                    <h2>Prochain évènement</h2>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+            </div>
+        </div>
         <div class="activity-part">
             <div class="activity-part-content">
                 <div class="activities">
@@ -58,7 +70,7 @@
                             <div class="activity-content">
                                 <div class="activity-desc">
                                     <h3>Communauté</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, modi.</p>
+                                    <p>Rejoins une communauté de joueurs passionés, avec des valeurs de respect, partage, et esprit d'équipe.</p>
                                 </div>
                                 <div class="activity-img"></div>
                             </div>
@@ -67,7 +79,7 @@
                             <div class="activity-content">
                                 <div class="activity-desc">
                                     <h3>WebTV</h3>
-                                    <p>Activité Description</p>
+                                    <p>Retrouve l'association sur Twitch et Youtube où nous diffusons jeux, tournois, et best-of !</p>
                                 </div>
                                 <div class="activity-img"></div>
                             </div>
@@ -88,7 +100,7 @@
                             <div class="activity-content">
                                 <div class="activity-desc">
                                     <h3>Évènements</h3>
-                                    <p>Activité Description</p>
+                                    <p>Participe à des tournois tous niveaux sur différents jeux.</p>
                                 </div>
                                 <div class="activity-img"></div>
                             </div>
@@ -100,16 +112,19 @@
         <div class="contact-part" id="contact-part">
             <div class="contact-content">
                 <div class="contact-form-content">
-                    <div class="contact-image"></div>
+                    <img class="contact-image" src="assets/Images/Envelope.svg" alt="Envelope image in the contact form.">
                     <form class="contact-form" action="">
-                        <div class="form-name">
-                            <input name="name-input" type="text" placeholder="Nom">
-                        </div>
-                        <div class="form-email">
-                            <input name="email-input" type="text" placeholder="Email">
-                        </div>
-                        <div class="form-message">
-                            <textarea name="message-input" cols="20" rows="10" placeholder="Message"></textarea>
+                        <h3>Contact</h3>
+                        <div class="contact-form-inputs">
+                            <div class="form-name">
+                                <input name="name-input" type="text" placeholder="Nom">
+                            </div>
+                            <div class="form-email">
+                                <input name="email-input" type="text" placeholder="Email">
+                            </div>
+                            <div class="form-message">
+                                <textarea name="message-input" cols="20" rows="10" placeholder="Message"></textarea>
+                            </div>
                         </div>
                         <div class="form-submit">
                             <input name="submit-input" id="submit-input" type="submit" value="Envoyer">
@@ -125,8 +140,7 @@
                     <li><i class="fab fa-youtube"></i></li>
                     <li><i class="fab fa-instagram"></i></li>
                     <li><i class="fab fa-discord"></i></li>
-                    <li><i class="fab fa-twitch"></i></li>
-                    <li><i class="fab fa-twitch"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
                 </ul>
             </div>
         </div>
