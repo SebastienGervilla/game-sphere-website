@@ -7,17 +7,6 @@ function updateScrollBar() {
     scrollbarYPos = scrollBar.getBoundingClientRect().y,
     scrollBarHeight = scrollBar.offsetHeight;
     progressBarHeight = -scrollbarYPos + window.innerHeight / 2;
-    // if (!(isFull)) {
-    //     if (progressBarHeight < 0) {
-    //         progressBarHeight = 0;
-    //     } else if (progressBarHeight >= scrollBarHeight) {
-    //         progressBarHeight = scrollBarHeight;
-    //         isFull = true;
-    //     } else {
-    //         progressBarHeight = Math.round(progressBarHeight);
-    //     }
-    //     document.getElementById('progress-bar').style.height = progressBarHeight.toString() + 'px';
-    // }
 
     if (isFull) {
         progressBarHeight = scrollBarHeight;
